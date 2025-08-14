@@ -4,31 +4,127 @@
     color: aliceblue;
 }
 .body{
-    width: 100vw;
+    background-image: url("/media/rani_mehal1.png");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes it fill the whole screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
     height: 100vh;
+    
+    /* width: 100vw; */
 }
-.navbar{
-    height: 70px;
-    width: 100vw;
-}
+
 a{
     text-decoration: none;
 }
 nav{
-    height: 70px;
-    width: 100vw;
-    background-color: #1e1e1e;
-    align-items: center;
+   
+    background-color: none;
     justify-content: space-between;
-    position: sticky;
     display: flex;
 }
 .logo_name{
+    display: flex;
     margin: 5px;
-    padding: 20px;
+    align-items: center;
+    padding: 10px;
     font-weight: bold;
-    color: #ffcc70;
-    text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
+    
 }
+.logo_name a{
+    color: #1A237E;
+}
+.logo_name img{
+    width: 50px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    gap: 60px;
+}
+
+.content a{
+    font-weight: 900;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding-right: 20px;
+}
+.search a{
+    font-weight: bolder;
+}
+.search_bar{
+    color: black;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: 0.3;
+    border: none
+}
+.full_content{
+    display: flex;
+    align-items: center;
+}
+.left_content{
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 7vw;
+    border: 2px solid black;
+}
+.div1{
+    /* padding: ; */
+    height: 50vh;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+ .explore p {
+    font-size: 65px;
+    font-weight: 900;
+ }
+ .explore_about{
+    font-size: 28px;
+    font-weight: 300;
+ }
+
+.explore_btn button{
+    background-color: orange;
+    padding: 10px 24px;
+    margin: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.explore_btn button:hover{
+    background-color: rgb(233, 181, 86);
+    transition-duration: 1s;
+}
+.right_content{
+    height: 90vh;
+    width: 50vw;
+    border: 2px solid black;
+    
+}
+.dynamic{
+    height: 50vh;
+    width: 40vw;
+    border: 2px solid black;
+    margin: 35px;
+}
+.static{
+    height: 25vh;
+    width: 40vw;
+    border: 2px solid black;
+    margin: 35px;
+}
+/* .body img{
+    height: 200px;
+    width: 200px;
+} */

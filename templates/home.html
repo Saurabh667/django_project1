@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/static/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="/static/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="body">
-        <div class="navbar">
-            <nav>
-                <div class="logo_name">
-                    <a href="#">ALFAAZ ARENA</a>
-                </div>
-            </nav>
+      {% comment %} <img src="/media/rani-mahal-jhansi.jpg" alt="Rani Mahal Jhansi" width="600" /> {% endcomment %}
+
+      <div class="navbar">
+        <nav>
+          <div class="logo_name">
+            <img src="/media/logo.png" alt="" />
+            <a href="#">ALFAAZ ARENA</a>
+          </div>
+          <div class="content">
+            <a href="#">About</a>
+            <a href="#">Explore</a>
+            <a href="#">Destinations</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="search">
+            <input type="text" class="search_bar" />
+            <a href="#">Login</a>
+          </div>
+        </nav>
+        <div class="full_content">
+          <div class="left_content">
+            <div class="div1">
+              <div class="explore">
+                <p>
+                  Tourism <br/>
+                  of the Jhansi
+                </p>
+              </div>
+              <div class="explore_about">City Of Brave Queen</div>
+              <div class="explore_btn">
+                <button>Explore -----</button>
+              </div>
+              <div class="div2">
+                <button class="share">F</button>
+                <button class="share">T</button>
+                <button class="share">W</button>
+              </div>
+            </div>
+          </div>
+          <div class="right_content">
+            <div class="dynamic">
+                
+            </div>
+            <div class="static">
+                
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="/static/nav.js"></script>
-</body>
-
+  </body>
 </html>
