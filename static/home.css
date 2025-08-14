@@ -10,7 +10,7 @@
     background-size: cover; /* Makes it fill the whole screen */
     background-position: center; /* Centers the image */
     background-attachment: fixed;
-    height: 100vh;
+    /* height: 100vh; */
     
     /* width: 100vw; */
 }
@@ -152,3 +152,28 @@ nav{
     
     /* width: calc(100% / 3);  */
 }
+.next{
+    height: 100vh;
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+
+.card{
+    display:  flex;
+    height: 20vh;
+    width: 70vw;
+    border: 2px solid;
+    padding: 15px;
+    gap: 10px;
+}
+.all_card{
+    display: flex;
+    justify-content: center;
+}
+.image{
+    width: 20vw;
+    /* height: 12vh; */
+    border: 2px solid ;
+}
+
