@@ -106,6 +106,18 @@ nav{
     background-color: rgb(233, 181, 86);
     transition-duration: 1s;
 }
+/* .div2{
+    position: absolute;
+    bottom: 32px;
+}
+.div2 button{
+    color: black;
+} */
+ .footer{
+    position: absolute;
+    bottom: 0;
+ }
+
 .right_content{
     height: 90vh;
     width: 50vw;
@@ -121,10 +133,22 @@ nav{
 .static{
     height: 25vh;
     width: 40vw;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 35px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; /* prevents wrapping */
+    scroll-behavior: smooth;
+      scrollbar-width: none;
 }
-/* .body img{
-    height: 200px;
+ 
+.location{
+    height: 150px;
     width: 200px;
-} */
+    border: 2px solid;
+    flex: 0 0 auto; /* prevents shrinking */
+    
+    /* width: calc(100% / 3);  */
+}
