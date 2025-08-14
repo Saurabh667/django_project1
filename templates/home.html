@@ -71,25 +71,31 @@
           <div class="right_content">
             <div class="dynamic"></div>
             <div class="static">
-              <div class="location">hello</div>
-              <div class="location">sachi</div>
+              {% for destinationData in destination %}
+              <div class="location">
+                <p>{{destinationData.placeName}}</p></div>
+              <!-- <div class="location">sachi</div>
               <div class="location">gandu</div>
-              <div class="location">gandu</div>
+              <div class="location">gandu</div> -->
+              {% endfor %}
             </div>
           </div>
         </div>
         <div class="next">
           <div class="all_card">
+            {% for destinationData in destination %}
             <div class="card">
               <div class="image">
                 <img src="" alt="" />
               </div>
               <div class="desc">
-                <h1>Hello good morning</h1>
-                <p>Today is sunny day</p>
-                <p>Today is sunny day</p>
+                
+                <h1>{{destinationData.placeName}}</h1>
+                
+                <p>{{destinationData.placeDesc}}</p>
               </div>
             </div>
+            {% endfor %}
           </div>
         </div>
       </div>
