@@ -5,61 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/static/home.css" />
+    <link rel="stylesheet" href="/static/button.css" />
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <div class="body">
-      {% comment %} <img src="/media/rani-mahal-jhansi.jpg" alt="Rani Mahal Jhansi" width="600" /> {% endcomment %}
+      <nav>
+        <div class="logo_name">
+          <img src="/media/logo.png" alt="" />
+          <a href="#">ALFAAZ ARENA</a>
+        </div>
+        <div class="content">
+          <a href="http://127.0.0.1:8000/admin/">About</a>
+          <a href="#">Explore</a>
+          <a href="#">Destinations</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="search">
+          <form action="" method="get">
+            <input type="text" class="search_bar" name="placename" />
+            <input class="submit" type="submit" value="search" />
+          </form>
 
-      <div class="navbar">
-        <nav>
-          <div class="logo_name">
-            <img src="/media/logo.png" alt="" />
-            <a href="#">ALFAAZ ARENA</a>
-          </div>
-          <div class="content">
-            <a href="#">About</a>
-            <a href="#">Explore</a>
-            <a href="#">Destinations</a>
-            <a href="#">Contact</a>
-          </div>
-          <div class="search">
-            <input type="text" class="search_bar" />
-            <a href="#">Login</a>
-          </div>
-        </nav>
-        <div class="full_content">
-          <div class="left_content">
-            <div class="div1">
-              <div class="explore">
-                <p>
-                  Tourism <br/>
-                  of the Jhansi
-                </p>
-              </div>
-              <div class="explore_about">City Of Brave Queen</div>
-              <div class="explore_btn">
-                <button>Explore -----</button>
-              </div>
-              <div class="div2">
-                <button class="share">F</button>
-                <button class="share">T</button>
-                <button class="share">W</button>
-              </div>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+      <div class="full_content">
+        <div class="left_content">
+          <div class="div1">
+            <div class="explore">
+              <p>
+                Tourism <br />
+                of the Jhansi
+              </p>
+            </div>
+            <div class="explore_about">City Of Brave Queen</div>
+            <div class="explore_btn">
+              <button class="mic">Chatbot---</button>
+            </div>
+            <div class="footer">
+              <ul class="wrapper">
+                <li class="icon facebook">
+                  <span class="tooltip">Github</span>
+                  <svg height="1.8em" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" data-view-component="true">
+                    <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+                  </svg>
+                </li>
+                <li class="icon twitter">
+                  <span class="tooltip">LinkedIn</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" id="linkedin-bug-blue-medium" height="1.4em" aria-hidden="false" data-supported-dps="34x34" viewBox="0 0 34 34" data-token-id="417" aria-label="LinkedIn">
+                    <path fill="#0a66c2" d="M34 2.5v29a2.5 2.5 0 0 1-2.5 2.5h-29A2.5 2.5 0 0 1 0 31.5v-29A2.5 2.5 0 0 1 2.5 0h29A2.5 2.5 0 0 1 34 2.5M10 13H5v16h5zm.45-5.5a2.88 2.88 0 0 0-2.86-2.9H7.5a2.9 2.9 0 0 0 0 5.8 2.88 2.88 0 0 0 2.95-2.81zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 0 0-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 0 1 3-3.58h.19c1.59 0 2.77 1 2.77 3.52V29h5z" display="var(--svgDisplayLight)"></path>
+                    <path fill="#1b1b1cff" d="M34 2.5v29a2.5 2.5 0 0 1-2.5 2.5h-29A2.5 2.5 0 0 1 0 31.5v-29A2.5 2.5 0 0 1 2.5 0h29A2.5 2.5 0 0 1 34 2.5M10 13H5v16h5zm.45-5.5a2.88 2.88 0 0 0-2.86-2.9H7.5a2.9 2.9 0 0 0 0 5.8 2.88 2.88 0 0 0 2.95-2.81zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 0 0-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 0 1 3-3.58h.19c1.59 0 2.77 1 2.77 3.52V29h5z" display="var(--svgDisplayDark)"></path>
+                  </svg>
+                </li>
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="right_content">
-            <div class="dynamic">
-                
-            </div>
-            <div class="static">
-                
-            </div>
+        </div>
+        <div class="right_content">
+          <div class="dynamic"></div>
+          <div class="static">
+            {% for destinationData in destination %}
+              <div class="location">
+                <img src="{{ destinationData.placeImg.url }}" alt="" />
+                <p>{{ destinationData.placeName }}</p>
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
+    <div class="next">
+      <div class="all_card">
+        {% for destinationData in destination %}
+          <div class="card">
+            <div class="image">
+              <img src="{{ destinationData.placeImg.url }}" alt="" />
+            </div>
+            <div class="desc">
+              <h1 class="forJs">{{ destinationData.placeName }}</h1>
+
+              <p class="descJs">{{ destinationData.placeDesc }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
     <script src="/static/nav.js"></script>
+    {% comment %} <script src="/static/home.js"></script> {% endcomment %}
   </body>
 </html>

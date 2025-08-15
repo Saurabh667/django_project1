@@ -1,8 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from placeData.models import destinationData
 
 def home(request):
-    return render(request,'home.html')
+    destination=destinationData.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('placename')
+        if st != None:
+            destination=destinationData.objects.filter(placeName__icontains=st)
+    destinations={
+        'destination':destination,
+    }
+    return render(request,'home.html',destinations)
 def login(request):
     return render(request,'login.html')
 def signup(request):
