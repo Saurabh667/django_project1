@@ -11,9 +11,8 @@
 
   <body>
     <div class="body">
-      {% comment %} <img src="/media/rani-mahal-jhansi.jpg" alt="Rani Mahal Jhansi" width="600" /> {% endcomment %}
-
-      <div class="navbar">
+      {% comment %} <div class="navbar">
+        {% endcomment %}
         <nav>
           <div class="logo_name">
             <img src="/media/logo.png" alt="" />
@@ -27,10 +26,9 @@
           </div>
           <div class="search">
             <form action="" method="get">
-              <input type="text" class="search_bar" name="placename"/>
-              <input type="submit" value="search">
+              <input type="text" class="search_bar" name="placename" />
+              <input class="submit" type="submit" value="search" />
             </form>
-            
 
             <a href="#">Login</a>
           </div>
@@ -76,31 +74,34 @@
             <div class="dynamic"></div>
             <div class="static">
               {% for destinationData in destination %}
-              <div class="location">
-                <p>{{destinationData.placeName}}</p></div>
+                <div class="location">
+                  <p>{{ destinationData.placeName }}</p>
+                </div>
               {% endfor %}
             </div>
           </div>
         </div>
-        <div class="next">
+        
+        {% comment %}
+      </div> {% endcomment %}
+    </div>
+    <div class="next">
           <div class="all_card">
             {% for destinationData in destination %}
-            <div class="card">
-              <div class="image">
-                <img src="" alt="" />
+              <div class="card">
+                <div class="image">
+                  <img src="" alt="" />
+                </div>
+                <div class="desc">
+                  <h1>{{ destinationData.placeName }}</h1>
+
+                  <p>{{ destinationData.placeDesc }}</p>
+                </div>
               </div>
-              <div class="desc">
-                
-                <h1>{{destinationData.placeName}}</h1>
-                
-                <p>{{destinationData.placeDesc}}</p>
-              </div>
-            </div>
             {% endfor %}
           </div>
         </div>
-      </div>
-    </div>
     <script src="/static/nav.js"></script>
+    <script src="/static/home.js"></script>
   </body>
 </html>

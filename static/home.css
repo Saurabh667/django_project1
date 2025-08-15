@@ -7,12 +7,9 @@
     background-image: url("/media/rani_mehal1.png");
     opacity: 0.9;
     background-repeat: no-repeat;
-    background-size: cover; /* Makes it fill the whole screen */
+    background-size: cover; 
     background-position: center; /* Centers the image */
-    background-attachment: fixed;
-    /* height: 100vh; */
-    
-    /* width: 100vw; */
+  
 }
 
 a{
@@ -67,6 +64,7 @@ nav{
     opacity: 0.3;
     border: none
 }
+
 .full_content{
     display: flex;
     align-items: center;
@@ -147,33 +145,46 @@ nav{
 .location{
     height: 150px;
     width: 200px;
-    border: 2px solid;
-    flex: 0 0 auto; /* prevents shrinking */
-    
-    /* width: calc(100% / 3);  */
+    background-color: palegreen;
+    border-radius: 20px;
+    flex: 0 0 auto;   
+   
 }
 .next{
     height: 100vh;
     padding: 20px;
     border: 2px solid black;
+    background-color: aqua;
     
+    
+}
+.all_card{
+    height: 100vh;
+    width: 76vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .card{
+    margin: 10px 0;
     display:  flex;
     height: 20vh;
     width: 70vw;
-    border: 2px solid;
     padding: 15px;
     gap: 10px;
+    border-radius: 20px;
+    background-color: cadetblue;
 }
-.all_card{
-    /* display: flex; */
-    justify-content: center;
-}
+
+  .desc{
+    overflow: hidden;
+    width: 50vw;
+  }
+ 
 .image{
     width: 20vw;
-    /* height: 12vh; */
+    border-radius: 20px;
     border: 2px solid ;
 }
 
