@@ -15,7 +15,7 @@ if (!SpeechRecognition) {
   recognition.lang = 'en-US';
 
   startBtn.addEventListener("click", () => {
-    // bolo("You have Clicked the button")
+    bolo("You have Clicked the button")
     // output.innerText = "Listening...";
     recognition.start();
 
@@ -38,6 +38,6 @@ if (!SpeechRecognition) {
   };
 
   recognition.onerror = (event) => {
-    output.innerText = `Error occurred: ${event.error}`;
+    // output.innerText = `Error occurred: ${event.error}`;
   };
 }
