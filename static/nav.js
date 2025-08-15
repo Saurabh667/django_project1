@@ -58,6 +58,7 @@ console.log("Your browser does not support Speech Recognition.")
 
   startBtn.addEventListener("click", () => {
     // bolo("You have Clicked the button")
+    // output.innerText = "Listening...";
     recognition.start();
 
   });
