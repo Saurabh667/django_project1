@@ -46,7 +46,7 @@
               </div>
               <div class="explore_about">City Of Brave Queen</div>
               <div class="explore_btn">
-                <button>Chatbot---</button>
+                <button class="mic">Chatbot---</button>
               </div>
               <div class="footer">
                 <ul class="wrapper">
@@ -73,12 +73,19 @@
             </div>
           </div>
           <div class="right_content">
-            <div class="dynamic"></div>
+            <div class="dynamic">
+              
+            </div>
             <div class="static">
+              
               {% for destinationData in destination %}
               <div class="location">
+                
+                <img src="{{destinationData.placeImg.url}}" alt="" />
                 <p>{{destinationData.placeName}}</p></div>
+              
               {% endfor %}
+              
             </div>
           </div>
         </div>
@@ -87,7 +94,7 @@
             {% for destinationData in destination %}
             <div class="card">
               <div class="image">
-                <img src="" alt="" />
+                <img src="{{destinationData.placeImg.url}}" alt="" />
               </div>
               <div class="desc">
                 
