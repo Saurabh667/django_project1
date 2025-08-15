@@ -26,7 +26,11 @@
             <a href="#">Contact</a>
           </div>
           <div class="search">
-            <input type="text" class="search_bar" />
+            <form action="" method="get">
+              <input type="text" class="search_bar" name="placename"/>
+              <input type="submit" value="search">
+            </form>
+            
 
             <a href="#">Login</a>
           </div>
@@ -74,9 +78,6 @@
               {% for destinationData in destination %}
               <div class="location">
                 <p>{{destinationData.placeName}}</p></div>
-              <!-- <div class="location">sachi</div>
-              <div class="location">gandu</div>
-              <div class="location">gandu</div> -->
               {% endfor %}
             </div>
           </div>

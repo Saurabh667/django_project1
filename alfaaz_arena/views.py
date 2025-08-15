@@ -4,6 +4,10 @@ from placeData.models import destinationData
 
 def home(request):
     destination=destinationData.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('placename')
+        if st != None:
+            destination=destinationData.objects.filter(placeName__icontains=st)
     destinations={
         'destination':destination,
     }
