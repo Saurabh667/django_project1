@@ -65,7 +65,7 @@ body{
 }
 .left_container{
     /* background-color:#56DFCF; */
-    background-image: url('/media/login.png');
+    background-image:url('/media/sign.png'); 
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
