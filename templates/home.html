@@ -78,6 +78,7 @@
               
               {% for destinationData in destination %}
               <div class="location">
+                <img src="{{destinationData.placeImg.url}}" alt="">
                 <p>{{destinationData.placeName}}</p></div>
               {% endfor %}
               
@@ -93,7 +94,7 @@
             {% for destinationData in destination %}
             <div class="card">
               <div class="image">
-                <img src="" alt="" />
+                <img src="{{destinationData.placeImg.url}}" alt="" />
               </div>
               <div class="desc">
                 
