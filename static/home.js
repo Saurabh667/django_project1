@@ -1,7 +1,7 @@
 console.log("ayush")
 
   const images = [
-      "media/user_data/OIP_1.webp",
+      "media/user_data/barua.jpg",
       "media/user_data/OIP_2.webp",
       "media/user_data/OIP.webp",
       "media/user_data/Op3.webp",
