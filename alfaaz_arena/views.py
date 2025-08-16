@@ -22,12 +22,12 @@ def signup(request):
         last_name=request.POST.get('last_name')
         username=request.POST.get('username')
         if signUp.objects.filter(username=username).exists():
-            message=' already exist'
+            message='User already exist'
             return render(request,'signup.html',{'message':message})
         email=request.POST.get('email')
         password=request.POST.get('password')
         if signUp.objects.filter(email=email).exists():
-            message='mail already exist'
+            message='Mail already exist'
             return render(request,'signup.html',{'message':message})
         elif not email:
             return HttpResponse('email is required',status=400)
@@ -39,13 +39,9 @@ def signup(request):
                     Welcome to Alfaaz Arena! 🎊<br>
                     We’re thrilled to have you join our community where creativity meets expression.<br>
                     Your account has been successfully created, and you can now log in anytime to explore, share, and connect with like-minded people.<br>
-
                     Start your journey by visiting our homepage and discovering amazing content tailored just for you.<br>
-
                     If you have any questions, feel free to reach out to our support team.<br>
-
                     Once again, welcome aboard!<br>
-
                     Warm regards,<br>
                     At {current_time}<br>
                     The Alfaaz Arena Team'''
@@ -65,12 +61,17 @@ def login(request):
     if request.method=="POST":
         username=request.POST.get('username')
         password=request.POST.get('password')
-        user_ka_naam=signUp.objects.get(username=username)
-        if user_ka_naam.password==password:
-            message='login succesful'
-            return render(request,'home.html',{'message':message})
+        # user_ka_naam=signUp.objects.get(username=username)
+        if signUp.objects.filter(username=username).exists():
+            user_ka_naam=signUp.objects.get(username=username)
+            if user_ka_naam.password==password:
+                message='login succesful'
+                return render(request,'home.html',{'message':message})
+            else:
+                message='Incorrect Password'
+                return render(request,'login.html',{'message':message})
         else:
-            message='user does not exist or incorrect password'
+            message="Username does not exists"
     return render(request,'login.html',{'message':message})
 
 def about(request):

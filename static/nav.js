@@ -171,3 +171,7 @@ console.log("Your browser does not support Speech Recognition.")
     // output.innerText = `Error occurred: ${event.error}`;
   };
 }
+
+
+
+
