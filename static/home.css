@@ -3,6 +3,9 @@
     padding: 0;
     color: aliceblue;
 }
+html{
+    scroll-behavior: smooth;
+}
 .body{
     background-image: url("/media/rani_mehal1.png");
     opacity: 0.9;
@@ -194,8 +197,26 @@ nav{
 }
 
 .bg_footer{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-color: rgb(63, 62, 62);
 }
-
+.new{
+    display: flex;
+}
+.down1{
+    width: 70%;
+    border: 2px solid;
+}
+.down2{
+    display: flex;
+    width: 50%;
+    border: 2px solid;
+    color: white;
+    padding: 10px;
+}
+.first{
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+}

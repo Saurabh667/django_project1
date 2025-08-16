@@ -18,9 +18,9 @@
         </div>
         <div class="content">
           <a href="http://127.0.0.1:8000/admin/">About</a>
-          <a href="#">Explore</a>
+          <a href="#explore">Explore</a>
           <a href="#">Destinations</a>
-          <a href="#">Contact</a>
+          <a href="#footer">Contact</a>
         </div>
         <div class="search">
           <form action="" method="get">
@@ -84,7 +84,7 @@
         </div>
       </div>
     </div>
-    <div class="next">
+    <div class="next" id="explore">
       <div class="all_card">
         {% for destinationData in destination %}
           <div class="card">
@@ -124,10 +124,14 @@
         </li>
       </ul>
       </div>
-      <div class="down">
-        <div class="first"></div>
-        <div class="first"></div>
-        <div class="first"></div>
+      <div class="new">
+
+      <div class="down1"></div>
+      <div class="down2" id="footer">
+        <div class="first">Resource</div>
+        <div class="first">Information</div>
+        <div class="first">Legal</div>
+      </div>
       </div>
 
     </div>
