@@ -35,11 +35,17 @@ body{
 
 }
 .right_container{
+    display: flex;
     font-size: 40px;
     text-align: center;
     /* background-color: #e89b2d; */
-     background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
+    background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
     
+}
+.message{
+    margin: 15px;
+    font-size: 24px;
+    width: 220px;
 }
 .input-box input{
     margin: 2px;

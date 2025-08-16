@@ -11,7 +11,7 @@
 
 .wrapper .icon {
   position: relative;
-  background: rgb(238, 228, 40);
+  background: white;
   /*#fff*/
   border-radius: 50%;
   margin: 10px;
@@ -68,7 +68,7 @@
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #6ba0e6;
+  background: #4e5052;
   color: #fff;
 }
 
@@ -94,17 +94,22 @@
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
-  object-fit: cover;
+  /* object-fit: cover; */
   cursor: pointer;
   transition: all 0.5s;
   flex: 0 0 auto;
   /* user-select: none; */
-
 }
 
-.location img {
+.locationImage img {
   border-radius: 17px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.location p{
+  height: 18px;
+  text-align: center;
 }
 
 .location:hover {
@@ -115,3 +120,142 @@
 .location:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
+.locationImage{
+  width: 200px;
+  height: 130px;
+  object-fit: contain;
+}
+
+
+#heart {
+  display: none;
+}
+
+.like-button {
+  /* position: relative; */
+  cursor: pointer;
+  /* display: flex; */
+  height: 37px;
+  width: 100px;
+  border-radius: 23px;
+  /* border: none; */
+  background-color: #e1dede;
+  /* overflow: hidden; */
+  box-shadow:
+    inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.4),
+    -2px -2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.like {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: end;
+}
+
+.like-icon {
+  /* border: 1px solid black; */
+  fill: #efb2b2;
+  height: 25px;
+  width: 25px;
+}
+
+.like-text {
+  color: #242323;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 
+.like-count {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #717070;
+  font-size: 16px;
+  border-left: 2px solid #4e4e4e;
+  transition: all 0.5s ease-out;
+}
+
+.like-count.two {
+  transform: translateY(40px);
+} */
+
+.on:checked ~ .like .like-icon {
+  fill: #fc4e4e;
+  animation: enlarge 0.2s ease-out 1;
+  transition: all 0.2s ease-out;
+}
+/* 
+.on:checked ~ .like-count.two {
+  transform: translateX(0);
+  color: #fcfcfc;
+}
+
+.on:checked ~ .like-count.one {
+  transform: translateY(-40px);
+} */
+
+@keyframes enlarge {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.submit {
+ align-items: center;
+ background-color: #FFFFFF;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ border-radius: 25px;
+ box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+ box-sizing: border-box;
+ color: rgba(0, 0, 0, 0.85);
+ cursor: pointer;
+ display: inline-flex;
+ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 16px;
+ font-weight: 600;
+ justify-content: center;
+ /* line-height: 1.25; */
+ /* min-height: 3rem; */
+ /* padding: calc(.875rem - 1px) calc(1.5rem - 1px); */
+ padding: 5px 17px;
+ text-decoration: none;
+ transition: all 250ms;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ vertical-align: baseline;
+ width: auto;
+}
+
+.submit:hover,
+.submit:focus {
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+ color: rgba(0, 0, 0, 0.65);
+}
+
+.submit:hover {
+ transform: translateY(-1px);
+}
+
+.submit:active {
+ background-color: #F0F0F1;
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+ color: rgba(0, 0, 0, 0.65);
+ transform: translateY(0);
+}
+
+
