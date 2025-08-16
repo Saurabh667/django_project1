@@ -11,7 +11,7 @@
 
 .wrapper .icon {
   position: relative;
-  background: rgb(238, 228, 40);
+  background: white;
   /*#fff*/
   border-radius: 50%;
   margin: 10px;
@@ -68,7 +68,7 @@
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #6ba0e6;
+  background: #4e5052;
   color: #fff;
 }
 

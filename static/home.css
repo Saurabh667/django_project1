@@ -181,7 +181,7 @@ nav{
   }
  
 .image{
-    
+
     width: 20vw;
     border: 2px solid ;
 
@@ -191,5 +191,11 @@ nav{
     height: 100%;
     object-fit: contain; 
     display: block;
+}
+
+.bg_footer{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(63, 62, 62);
 }
 
