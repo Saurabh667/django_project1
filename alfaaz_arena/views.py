@@ -30,7 +30,8 @@ def signup(request):
             message='Mail already exist'
             return render(request,'signup.html',{'message':message})
         elif not email:
-            return HttpResponse('email is required',status=400)
+            message='E-mail required'
+            return render(request,'signup.html',{'message':message})
         else:
             current_time = datetime.datetime.now().time()
             subject="Succesfully Registered to our website"

@@ -3,8 +3,11 @@
     padding: 0;
     color: aliceblue;
 }
+html{
+    scroll-behavior: smooth;
+}
 .body{
-    background-image: url("/media/rani_mehal1.png");
+    background-image: url("/media/home.png");
     opacity: 0.9;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -93,6 +96,7 @@ nav{
  .explore p {
     font-size: 65px;
     font-weight: 900;
+    color: rgb(120, 116, 108);
  }
  .explore_about{
     font-size: 28px;
@@ -133,69 +137,141 @@ nav{
     width: 40vw;
     border: 2px solid black;
     margin: 35px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.dynamic img{
+       width: 100%;
+      height: 100%;
+      object-fit: cover;
 }
 .static{
     height: 25vh;
     width: 40vw;
-       margin: 35px;
+    margin: 35px;
     display: flex;
     gap: 15px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap; /* prevents wrapping */
     scroll-behavior: smooth;
-      scrollbar-width: none;
+    scrollbar-width: none;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
- 
+
 
 .next{
-    height: 100vh;
+    /* height: 100vh; */
     padding: 20px;
-    border: 2px solid black;
-    background-color: aqua;
+    /* border: 2px solid black; */
+    background: #000000;
+background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgb(242, 238, 234) 100%);
+/* background: #373b37; */
+/* background: linear-gradient(0deg, rgba(55, 59, 55, 1) 0%, rgba(232, 198, 123, 1) 100%); */
+/* background: linear-gradient(to top, #a76a3c, #d8b98f, #b0d8f5, #6bb6f0); */
+
     
     
 }
 .all_card{
-    height: 100vh;
-    width: 76vw;
-    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    width: 65%;
+    gap: 15px;
+    border: 2px solid;
+    /* overflow-x: hidden;
     overflow-y: auto;
-    scrollbar-width: none;
+    scrollbar-width: none; */
 }
 
 .card{
     margin: 10px 0;
-    display:  flex;
-    height: 20vh;
-    width: 70vw;
+    min-height: 70vh;
+    width:43%;
+    border: 2px solid;
     padding: 15px;
     gap: 10px;
     border-radius: 20px;
     background-color: cadetblue;
+    position: relative;
+   
 }
-
+.mylike{
+     position: absolute;
+    bottom: 0;
+    display: flex;
+}
   .desc{
-    overflow: hidden;
-    width: 50vw;
+    
+    overflow-wrap: break-word; /* modern way */
+  white-space: normal;
+  padding-bottom: 15px; 
+  }
+  .desc p{
+    margin-bottom: 15px;
   }
  
 .image{
 
-    width: 20vw;
+    width: 26vw;
+    height: 30vh;
     border: 2px solid ;
 
 }
 .image img{
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: cover; 
     display: block;
 }
 
 .bg_footer{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
-    background-color: rgb(63, 62, 62);
+    background-color: #000000;
 }
+.new{
+    display: flex;
+}
+.left{
+    width: 50%;
+    padding: 0 20px;
 
+    /* border: 2px solid; */
+}
+.left >p{
+    margin: 10px 0;
+}
+.left img{
+    width: 50px;
+
+}
+.right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* border: 2px solid; */
+    color: white;
+    padding: 10px;
+}
+.first{
+    /* border: 2px solid; */
+    width: 150px;
+    height: 225px;
+}
+.info{
+    width: 170px;
+}
+.first h1{
+    font-size: 24px;
+}
+.first p{
+    margin: 19px 0;
+}
+.descr{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+
+}
