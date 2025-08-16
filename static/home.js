@@ -1,12 +1,25 @@
-console.log("hello good")
+console.log("ayush")
 
+  const images = [
+      "media/user_data/OIP_1.webp",
+      "media/user_data/OIP_2.webp",
+      "media/user_data/OIP.webp",
+      "media/user_data/Op3.webp",
+      
+    ];
 
-let mic = document.querySelector(".mic")
-mic.addEventListener("click",()=>{
-    console.log("clicked")
-})
+    let index = 0;
+    const slide = document.getElementById("slide");
 
-let  facebook=document.querySelector(".facebook").addEventListener("click",()=>{
-    console.log("Facebook")
-})
+    // Function to change image
+    function changeImage() {
+      slide.src = images[index];
+      index = (index + 1) % images.length;  // loop back to start
+    }
 
+    // First image load
+    changeImage();
+    
+
+    // Change every 3 seconds
+    setInterval(changeImage, 3000);
