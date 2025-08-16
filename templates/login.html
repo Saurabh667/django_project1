@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <div class="full_container">
         <div class="left_container">
             <h2>Welcome to....</h2>
@@ -19,13 +18,14 @@
             </p>
         </div>
         <div class="right_container">
-            <form class="form">
+            <form class="form" method="post" action="">
+                {% csrf_token %}
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" name="username">
                 </div>
                 <div class="input-box 1 ">
-                    <input type="text" placeholder="Password">
+                    <input type="password" placeholder="Password" name="password">
                     <!-- </div>
         <div class="remember-forget">
             <label><input type="checkbox">Remember me</label>
@@ -36,11 +36,11 @@
                 <button type="submit" class="button">Login</button>
 
             </form>
-
+            <div class="message">
+                {{message}}
+            </div>
         </div>
     </div>
-=======
-  
->>>>>>> ee360f510a791e64b810c73710b382bd88a66fbc
+
 </body>
 </html>
