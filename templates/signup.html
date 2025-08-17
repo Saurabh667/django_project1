@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/signup.css">
 </head>
+
 <body>
     <div class="full_container">
         <div class="left_container">
             <h2>Welcome to....</h2>
-            
-    <p> kusu</p>
+
+            <p> kusu</p>
         </div>
         <div class="right_container">
             <form class="form" action="{% url 'signup' %}" method="post">
@@ -38,11 +40,16 @@
                 </div>
                 <button type="submit" class="button">signup</button>
                 <div class="message">
-                {{message}}
+                    {{message}}
+                </div>
+                <div class="redirect">
+                    <p>Already have an account ? <a href="http://127.0.0.1:8000/login/">Login</a></p>
+
                 </div>
             </form>
-            
+
         </div>
     </div>
 </body>
+
 </html>

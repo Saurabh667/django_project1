@@ -35,7 +35,7 @@ body{
 
 }
 .right_container{
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     /* background-color: #e89b2d; */
      background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
@@ -92,4 +92,7 @@ body{
     text-align: center;
     justify-content: center;
     padding-top: 60px;
+}
+.redirect{
+    font-size: 14px;
 }
