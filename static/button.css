@@ -139,7 +139,7 @@
   width: 100px;
   border-radius: 23px;
   /* border: none; */
-  background-color: #e1dede;
+  background-color: #fffefe;
   /* overflow: hidden; */
   box-shadow:
     inset -2px -2px 5px rgba(255, 255, 255, 0.2),
@@ -188,13 +188,13 @@
   transform: translateY(40px);
 } */
 
-.on:checked ~ .like .like-icon {
+/* .on:checked ~ .like .like-icon {
   fill: #fc4e4e;
   animation: enlarge 0.2s ease-out 1;
   transition: all 0.2s ease-out;
-}
-/* 
-.on:checked ~ .like-count.two {
+} */
+
+/* .on:checked ~ .like-count.two {
   transform: translateX(0);
   color: #fcfcfc;
 }

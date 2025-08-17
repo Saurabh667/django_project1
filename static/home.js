@@ -25,35 +25,7 @@ console.log("ayush")
     setInterval(changeImage, 3000);
     
 
-    // let like_btn = document.querySelector(".like-btn")
-    // const likeIcon = document.querySelector(".like .like-icon");
-    // like_btn.addEventListener("click",()=>{
-
-    // })
-
-// function toggleLike(btn) {
-//     const icon = btn.querySelector(".like-icon path");
-
-//     // Check current color
-//     if (icon.getAttribute("fill") === "#fc4e4e") {
-//       icon.setAttribute("fill", "none"); // unliked (empty heart)
-//     } else {
-//       icon.setAttribute("fill", "#fc4e4e"); // liked (red heart)
-
-//       // Small "pop" animation effect
-//       btn.querySelector(".like-icon").animate(
-//         [
-//           { transform: "scale(1)" },
-//           { transform: "scale(1.2)" },
-//           { transform: "scale(1)" }
-//         ],
-//         {
-//           duration: 200,
-//           easing: "ease-out"
-//         }
-//       );
-//     }
-//   }
+ 
 function toggleLike(btn) {
     const icon = btn.querySelector(".like-icon path");
     const placeId = btn.getAttribute("data-id");
@@ -65,11 +37,11 @@ function toggleLike(btn) {
     if (likedItems.includes(placeId)) {
       // Unlike
       likedItems = likedItems.filter(id => id !== placeId);
-      icon.setAttribute("fill", "none");
+      icon.setAttribute("fill", "#faa6a6ff");
     } else {
       // Like
       likedItems.push(placeId);
-      icon.setAttribute("fill", "#fc4e4e");
+      icon.setAttribute("fill", "#fc4f4fff");
 
       // Small animation
       btn.querySelector(".like-icon").animate(
@@ -90,5 +62,6 @@ function toggleLike(btn) {
       if (btn) {
         btn.querySelector(".like-icon path").setAttribute("fill", "#fc4e4e");
       }
+      
     });
   };

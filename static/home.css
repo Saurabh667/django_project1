@@ -14,7 +14,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* Centers the image */
+   
 }
 
 a {
@@ -23,7 +23,7 @@ a {
 
 nav {
 
-    /* background-color: none; */
+   
     justify-content: space-between;
     display: flex;
 }
@@ -51,8 +51,7 @@ nav {
 .content {
     display: flex;
     align-items: center;
-    /* border: 2px solid black; */
-    gap: 60px;
+  
 }
 
 .content a {
@@ -60,10 +59,19 @@ nav {
 }
 
 .content a:hover {
-    color: rgb(52, 143, 223);
-    /* padding: 5px; */
-    /* background-color: rgb(249, 247, 247);     */
+  
+    font-size: 17px;
+   
 }
+.content div{
+     width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .search {
     display: flex;
@@ -96,16 +104,16 @@ nav {
     width: 50vw;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    
     padding-left: 7vw;
-    /* border: 2px solid black; */
+    
 }
 
 .div1 {
-    /* padding: ; */
+   
     height: 50vh;
     align-items: center;
-    /* border: 2px solid black; */
+   
 }
 
 .explore p {
@@ -188,9 +196,10 @@ nav {
 .next {
     /* height: 100vh; */
     padding: 20px;
+    background-color: white;
     /* border: 2px solid black; */
-    background: #000000;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(242, 238, 234) 100%);
+    /* background: #000000; */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(242, 238, 234) 100%); */
     /* background: #373b37; */
     /* background: linear-gradient(0deg, rgba(55, 59, 55, 1) 0%, rgba(232, 198, 123, 1) 100%); */
     /* background: linear-gradient(to top, #a76a3c, #d8b98f, #b0d8f5, #6bb6f0); */
@@ -219,8 +228,9 @@ nav {
     /* border: 2px solid; */
     padding: 15px;
     gap: 10px;
-    border-radius: 20px;
-    background-color: cadetblue;
+    /* border-radius: 20px; */
+    /* background-color: cadetblue; */
+    /* color: black; */
     position: relative;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 
@@ -243,6 +253,10 @@ nav {
 
 .desc p {
     margin-bottom: 15px;
+    color: rgb(38, 38, 38);
+}
+.desc h1{
+    color: black;
 }
 
 .image {
@@ -265,7 +279,7 @@ nav {
 .bg_footer {
     height: 60vh;
     width: 100%;
-    background-color: #000000;
+    background-color: #3a3939;
 }
 
 .new {
@@ -301,6 +315,9 @@ nav {
     /* border: 2px solid; */
     width: 150px;
     height: 225px;
+}
+.first  p a:hover{
+    color: gray;
 }
 
 .info {
