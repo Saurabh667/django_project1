@@ -4,6 +4,7 @@ from placeData.models import destinationData
 from signup.models import signUp
 import datetime
 from django.core.mail import send_mail,EmailMultiAlternatives
+from uploadedDatas.models import userUploads
 
 def home(request):
     destination=destinationData.objects.all()
@@ -80,4 +81,10 @@ def about(request):
 def botpage(request):
     return render(request,'botpage.html')
 def uploads(request):
+    if request.method=='POST':
+        destinationName=request.POST.get('destinationName')
+        destinationImg=request.POST.get('destinationImg')
+        destinationDesc=request.POST.get('destinationDesc')
+        userUploadData=userUploads(destinationName=destinationName,destinationImg=destinationImg,destinationDesc=destinationDesc)
+        userUploadData.save()
     return render(request,'uploads.html')

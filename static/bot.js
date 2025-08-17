@@ -1,14 +1,12 @@
 
+console.log('hello')
 const startBtn = document.querySelector(".mic");
 const placeName= document.querySelectorAll(".forJs");
 const placeDesc=document.querySelectorAll(".descJs");
-const explore=document.querySelector('.explorekabtn');
-const contact=document.querySelector('.contactkabtn');
-const login=document.querySelector('.loginkabtn');
 const listName=[];
 const listDesc=[];
-bolo('Welcome to the Jhansi Tourism where you get informations about the tourist places in Jhansi')
-bolo('Please login to stay connected')
+const textMessage=document.querySelector('.textPrint')
+
 placeName.forEach(el => {
     // console.log(el.innerHTML);
     listName.push(el.innerHTML.trim())
@@ -22,34 +20,43 @@ placeDesc.forEach(el => {
 console.log(listDesc)
 
 function bolo(audio) {
-  speaker = new SpeechSynthesisUtterance(audio)
+  let speaker = new SpeechSynthesisUtterance(audio)
   window.speechSynthesis.speak(speaker)
 }
 function logic(input){
     let command = input.toLowerCase()
     command=command.replace(".","").trim()
     // console.log(placeName)
+    textMessage.innerHTML=`You Said:${command}`;
+    console.log(listName.length)
     for (let index = 0; index < listName.length; index++) {
+        console.log('saurabh')
         let lowerName=listName[index].toLowerCase()
-        // console.log(lowerName)
-        // console.log(command)
+        console.log(lowerName)
+        console.log(command)
         if(lowerName.includes(command)){
             // console.log(listName[index])
             console.log('found it',index)
             bolo(listDesc[index])
+            textMessage.innerHTML=`${listDesc[index]}`;
         }
         else{
             // console.log(listName[index])
-            console.log('did not match')
+            console.log('Did not Found')
+            
         }
     }
-    if (command.includes('jhansi fort')) {
-        window.open('https://google.com', '_blank');
-        bolo('opening google sir')
-      }
-    else{
-        bolo('under working now')
-    }
+    
+    textMessage.innerHTML=`Did not Found`;
+    // if (command.includes('jhansi fort')) {
+    //     window.open('https://google.com', '_blank');
+    //     bolo('opening google sir')
+    //   }
+    // else{
+    //     bolo('under working now')
+    //     textMessage.innerHTML=`Under working Now`;
+
+    // }
 }
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -89,39 +96,3 @@ console.log("Your browser does not support Speech Recognition.")
     // output.innerText = `Error occurred: ${event.error}`;
   };
 }
-
-
-
-
-explore.addEventListener("click",()=>{
-  bolo('These are the tourist Places of the Jhansi')
-})
-contact.addEventListener("click",()=>{
-  bolo('This are the contact information about me you can connect to us')
-  bolo('We are ready to get Hired')
-
-})
-login.addEventListener("click",()=>{
-  bolo('If you do not have an account please sign up')
-})
-
-
-const placekanaam=document.querySelector('.placekanaam').innerHTML
-const placekadiv=document.querySelector('.location')
-placekadiv.addEventListener("click",()=>{
-  console.log(placekanaam)
-})
-
-const github=document.querySelector('.github');
-const linkedin=document.querySelector('.linkedin');
-const gmail=document.querySelector('.instagram');
-github.addEventListener("click",()=>{
-  bolo('You are redirecting to our github page')
-})
-linkedin.addEventListener("click",()=>{
-  bolo('You are redirecting to our linkedin page')
-})
-gmail.addEventListener("click",()=>{
-  bolo('You are redirecting to Google mail bot com')
-})
-

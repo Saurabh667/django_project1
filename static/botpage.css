@@ -42,10 +42,11 @@
     width: 40vw;
     border: 2px solid;
 }
-.text{
+.text_box{
     height: 40vh;
     width: 40vw;
     border: 2px solid;
+    padding: 20px;
 }
 
 
