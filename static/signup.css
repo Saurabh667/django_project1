@@ -56,14 +56,16 @@ body{
 
 }
 .button{
-    padding: 7px 20px;
+    height: 30px;
+    width: 60%;
+   
     border-radius: 10px;
     text-align: center;
     background-color: rgb(68, 68, 245);
-    margin-left: 80px;
+
 }
 .right_container h1{
-    color:rgb(68, 68, 245); 
+    color:rgb(68, 68, 245); ;
 
 }
 .left_container{
@@ -90,14 +92,4 @@ body{
     text-align: center;
     justify-content: center;
     padding-top: 60px;
-}
-.buttons{
-    display: flex;
-    padding: 10px;
-}
-
-.buttons a{
-    font-size: 14px;
-    margin-top: 14px;
-    margin-left: 42px;
 }
