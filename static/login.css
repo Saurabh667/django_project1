@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
 }
-body{
+/* body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 .full_container{
-    border: 2px solid black;
-    height: 99vh;
-    width: 99vw;
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,79 +20,99 @@ body{
 
 }
 .left_container{
-    border: 2px solid black;
-    height: 80vh;
+    /* border: 2px solid black; */
+    height: 70vh;
     width: 35vw;
-}
-.right_container{
-    border: 2px solid black;
-    height: 80vh;
-    width: 35vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-
-}
-.right_container{
-    display: flex;
-    font-size: 40px;
-    text-align: center;
-    /* background-color: #e89b2d; */
-    background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
-    
-}
-.message{
-    margin: 15px;
-    font-size: 24px;
-    width: 220px;
-}
-.input-box input{
-    margin: 2px;
-    border-radius: 40px;
-    width: 100%;
-    height: 20px;
-    padding: 12px;
-    
-
-}
-.button{
-    height: 30px;
-    width: 60%;
-   
-    border-radius: 10px;
-    text-align: center;
-    background-color: rgb(68, 68, 245);
-
-}
-.right_container h1{
-    color:rgb(68, 68, 245); ;
-
-}
-.left_container{
-    /* background-color:#56DFCF; */
-    background-image: url('/media/login.png');
+    padding-left: 17px;
+     background-image: url('/media/login.png');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
-    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
 }
-.left_container h2 {
-    color: white;
-    font-size: 40px;
-    display: flex;
-    text-align: center;
+.right_container{
+    /* border: 2px solid black; */
+    height: 70vh;
+    width: 35vw;
+    /* display: flex; */
     justify-content: center;
+    /* align-items: center; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+     display: flex;
+   
+    text-align: center;
+    
+    background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
+    
+
+   
+
+}
+.form h1{
+     font-size: 45px;
+     margin-top: 70px;
+    margin-bottom: 20px;
+     color:rgb(68, 68, 245); 
+     font-family: Arial, Helvetica, sans-serif;
+}
+/* .login_icon{
+    width: 100px;
+} */
+.login_icon img{
+    width: 143px;
+    border-radius: 76px;
+    margin: 50px;
+}
+
+.message{
+    margin: 15px;
+    font-size: 14px;
+    color: red;
+    /* width: 220px; */
+}
+.input-box input{
+    margin: 2px;
+    border-radius: 7px;
+    width: 100%;
+    height: 20px;
+    padding: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+
+    
+
+}
+.button{
+    padding: 10px 30px;
+    width: 110%;
+   margin-top: 25px;
+    border-radius: 7px;
+    /* text-align: center; */
+    background-color: rgb(168, 215, 244);
+    /* background: none; */
+}
+
+
+.left_container h1 {
+    color: white;
+    font-size: 54px;
+    /* display: flex; */
+    /* text-align: center;
+    justify-content: center; */
     padding-top: 60px;
+
 }
 .left_container p {
     color:white;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: 60px;
+    padding-top: 25px;
+    font-style: italic;
+    /* text-align: center;
+    justify-content: center; */
+    /* padding-top: 60px; */
 }
 .redirect{
     font-size: 14px;

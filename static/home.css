@@ -76,8 +76,17 @@ nav {
 .search {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 27px;
     padding-right: 20px;
+}
+.login_btn{
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+}
+.login_btn a{
+    color: black;
 }
 
 .search a {
