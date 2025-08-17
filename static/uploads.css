@@ -58,7 +58,11 @@
 .feedback{
     margin-top: 30px;
 }
-
+.feedbackinput{
+  height: 110px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
 .form .group label {
   font-size: 14px;
   color: rgb(99, 102, 102);

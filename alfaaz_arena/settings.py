@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tinymce',
     'placeData',
     'signup',
+    'uploadedDatas',
 ]
 
 MIDDLEWARE = [
