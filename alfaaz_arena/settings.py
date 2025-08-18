@@ -25,9 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%q@@468c*+ru-bud5#^4z)n)0y!81-dal0nqh*2k@%z$rz9**c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['jhansi-tourism.onrender.com']
+# ALLOWED_HOSTS = ['jhansi-tourism.onrender.com']
+ALLOWED_HOSTS = ["jhansi-tourism.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -149,7 +150,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('tkikppyscxvcfibv')
 
 
 DEBUG = False
-SECRET_KEY = os.environ.get('!3oibn7ok82_z%$2-sxi@v3b(fe7*)_$o=ig$550ynim^4r5$h')
+SECRET_KEY = os.environ.get('!3oibn7ok82_z%$2-sxi@v3b(fe7*)_$o=ig$550ynim^4r5$h', "django-insecure-fallback")
 
 
 DATABASES = {
