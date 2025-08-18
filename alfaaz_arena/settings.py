@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -145,3 +146,12 @@ EMAIL_USE_TLS = True
 # EMAIL_HOST_PASSWORD = 'tkikppyscxvcfibv'
 EMAIL_HOST_USER = os.environ.get('alfaazarena@gmail.com')
 EMAIL_HOST_PASSWORD = os.environ.get('tkikppyscxvcfibv')
+
+
+DEBUG = False
+SECRET_KEY = os.environ.get('!3oibn7ok82_z%$2-sxi@v3b(fe7*)_$o=ig$550ynim^4r5$h')
+
+
+DATABASES = {
+    'default': dj_database_url.config(default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3'))
+}
