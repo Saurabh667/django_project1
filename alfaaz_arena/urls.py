@@ -28,4 +28,4 @@ urlpatterns = [
     path('about/',views.about,name='about'),
     path('botpage/',views.botpage,name='botpage'),
     path('uploads/',views.uploads,name='uploads'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
