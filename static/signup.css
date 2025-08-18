@@ -1,13 +1,12 @@
 *{
-    
     margin: 0;
     padding: 0;
 }
 body{
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .full_container{
     border: 2px solid black;
@@ -16,13 +15,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-      background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
+    background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
 
 }
 .left_container{
     border: 2px solid black;
     height: 80vh;
     width: 35vw;
+}
+.welcome{
+    padding: 20px;
+    height: 40vh;
+    width: 30vw;
+    overflow: hidden;
+}
+.welcome img{
+    height: 40vh;
+    width: 30vw;
 }
 .right_container{
     border: 2px solid black;
@@ -69,11 +78,15 @@ body{
     color:rgb(68, 68, 245); ;
 
 }
+form h1{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
 .left_container{
     /* background-color:#56DFCF; */
-    background-image:url('/media/sign.png'); 
+    background-image:url('/media/handshake.jpg'); 
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: contain; 
     background-position: center;
     background-attachment: fixed;
     border-radius: 12px;

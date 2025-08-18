@@ -1,0 +1,45 @@
+a{
+    text-decoration: none;
+}
+.allNav{
+    width: 100vw;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(43, 41, 41);
+    height: 60px;
+    position: relative;
+}
+.logo2 img{
+    height: 40px;
+    padding-right: 20px;
+}
+.alfaz{
+    font-size: 26px;
+    font-weight: bolder;
+    
+}
+.alfaz a{
+    color: rgb(64, 76, 184);
+}
+.logo1{
+    display: flex;
+}
+.username{
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+.userdata{
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 150px;
+}
+
+.content{
+    display: flex;
+    gap: 26px;
+}
