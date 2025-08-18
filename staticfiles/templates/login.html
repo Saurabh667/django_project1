@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="/static/button.css" />
+    <link rel="stylesheet" href="/static/navbar.css" />
+    <title>Document</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="full_container">
+        <div class="left_container">
+            <h1>Welcome to....</h1>
+            
+    <p>Where History Echoes the Courage of the Brave Queen."<br>
+                "Jhansi – Step into the Land of the Fearless Rani."
+            </p>
+        </div>
+        <div class="right_container">
+            <form class="form" method="post" action="">
+                {% csrf_token %}
+                <div class="login_icon"><img src="/media/login_icon1.jpg" alt=""></div>
+                {% comment %} <h1>Login</h1> {% endcomment %}
+                <div class="input-box">
+                    <input type="text" placeholder="Username" name="username">
+                </div>
+                <div class="input-box 1 ">
+                    <input type="password" placeholder="Password" name="password">
+                    <!-- </div>
+                    <div class="remember-forget">
+                    <label><input type="checkbox">Remember me</label>
+                    <button type="submit" class="button">Login</button> -->
+
+                </div>
+                <button type="submit" class="button">Login</button>
+            <div class="message">
+                {{message}}
+            </div>
+            <div class="redirect">
+                <p>Don't have an account ? <a href="http://127.0.0.1:8000/signup/">Signup</a></p>
+                
+            </div>
+            </form>
+            
+        </div>
+    </div>
+{% include 'footer.html' %}
+</body>
+</html>

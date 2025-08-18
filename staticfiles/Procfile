@@ -1,0 +1,1 @@
+web: gunicorn alfaaz_arena.wsgi

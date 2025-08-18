@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.full_container{
+    border: 2px solid black;
+    height: 99vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
+
+}
+.left_container{
+    border: 2px solid black;
+    height: 80vh;
+    width: 35vw;
+}
+.welcome{
+    padding: 20px;
+    height: 40vh;
+    width: 30vw;
+    overflow: hidden;
+}
+.welcome img{
+    height: 40vh;
+    width: 30vw;
+}
+.right_container{
+    border: 2px solid black;
+    height: 80vh;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+}
+.right_container{
+    font-size: 36px;
+    text-align: center;
+    /* background-color: #e89b2d; */
+     background: linear-gradient(to bottom, #BFD0D3, #F2C38E);
+    
+}
+.message{
+    margin: 15px;
+    font-size: 24px;
+    width: 220px;
+}
+
+.input-box input{
+    margin: 2px;
+    border-radius: 12px;
+    width: 92%;
+    height: 20px;
+    padding: 12px;
+    
+
+}
+.button{
+    height: 30px;
+    width: 60%;
+   
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(68, 68, 245);
+
+}
+.right_container h1{
+    color:rgb(68, 68, 245); ;
+
+}
+form h1{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.left_container{
+    /* background-color:#56DFCF; */
+    background-image:url('/media/handshake.jpg'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 12px;
+}
+.left_container h2 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.left_container p {
+    color:white;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.redirect{
+    font-size: 14px;
+}
+
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+.name1 input{
+    width: 140px;
+}

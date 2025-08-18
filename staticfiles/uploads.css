@@ -1,0 +1,212 @@
+*{
+    /* background-color: rgb(100, 62, 62); */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .navbar{
+    height: 80px;
+    width: 100vw;
+    background-color: aquamarine;
+} */
+.contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+}
+.messageBox{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.messageGiven h1{
+    color: black;
+}
+.messageGiven a{
+  color: rgb(36, 36, 44);
+}
+.messageGiven button{
+  background-color: #487de6;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.messageGiven button:hover{
+  background-color: #fff;
+}
+.images{
+    height: 70vh;
+    width: 70vw;
+    background-color: black;
+}
+.uploads{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: black ;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.group {
+    padding-top: 20px;
+  position: relative;
+}
+.comment{
+    margin-top: 30px;
+}
+.feedback{
+    margin-top: 30px;
+}
+.feedbackinput{
+  height: 110px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 93%;
+  background-color: transparent;
+  color:black;
+}
+
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.form .group input:focus+ label, .form .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #27408b;
+}
+
+/* uploads */
+
+.drop-container {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 2.1875rem;
+  border-radius: 10px;
+  border: 2px dashed rgb(171, 202, 255);
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: rgba(0, 140, 255, 0.164);
+  border-color: rgba(17, 17, 17, 0.616);
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+#file-input {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 2px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(8, 8, 8, 0.288);
+}
+
+#file-input::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+#file-input::file-selector-button:hover {
+  background: #0d45a5;
+}
