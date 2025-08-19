@@ -80,13 +80,17 @@ WSGI_APPLICATION = 'alfaaz_arena.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default=os.getenv("postgresql://uploads_data_user:eUrYajo7bIcqBxoZrAjxZllLO2PTBnE9@dpg-d2i2b5ruibrs73dql0f0-a/uploads_data")  # will read from Render env var
+    )
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
