@@ -178,8 +178,12 @@ SECRET_KEY = os.environ.get(
 )
 
 DEBUG = True  # Keep True for local development, False in production
+CSRF_TRUSTED_ORIGINS = [
+    "https://jhansi-tourism.onrender.com",
+    "https://www.jhansi-tourism.onrender.com",
+]
 
-ALLOWED_HOSTS = ["jhansi-tourism.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["jhansi-tourism.onrender.com","www.jhansi-tourism.onrender.com", "localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
