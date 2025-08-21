@@ -1,42 +1,37 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/static/about.css">
-    <link rel="stylesheet" href="/static/footer.css">
-    <link rel="stylesheet" href="/static/button.css"/>
-    <link rel="stylesheet" href="/static/navbar.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="/static/about.css" />
+    <link rel="stylesheet" href="/static/footer.css" />
+    <link rel="stylesheet" href="/static/button.css" />
+    <link rel="stylesheet" href="/static/navbar.css" />
+  </head>
+  <body>
     {% include 'navbar.html' %}
-      <div class="author-container">
-        <div class="author-image">
-            <img src="/static/images/author.jpg" alt="Author Photo">
-        </div>
-        <div class="author-details">
-            <h1>About the Author</h1>
-            <p>
-    <span class="highlight">Sachin Yadav</span>, <span class="highlight">Saurabh Yadav</span>, and <span class="highlight">Ayush Gaur</span> are the creators and developers of this website.  
-    We are passionate about building modern, user-friendly web applications that solve real-world problems.
-</p>
-<p>
-    Our journey in web development began with curiosity and a love for learning. Over time, we have explored technologies such as  
-    <span class="highlight">Django, Python, JavaScript</span>, and more. Our mission is to create platforms that inspire and empower others.
-</p>
-<p>
-    Beyond coding, we enjoy exploring new tools, helping others learn programming, and working on creative side projects.
-</p>
-<p>
-    Thank you for visiting our site — we truly appreciate your support!<br>
-    WE ARE SEARCHING FOR INTERNSHIP OFFER's.
-</p>
-
-        </div>
+    <div class="author-container">
+      <div class="author-image">
+        <img src="/static/images/author.jpg" alt="Author Photo" />
+      </div>
+      <div class="author-details">
+        <h1>About the Author</h1>
+        <p>
+          <span class="highlight">Sachin Yadav</span>,<span class="highlight">Ayush Gaur</span>, <span class="highlight">Prakash Mishra</span>, <span class="highlight">Saurabh Yadav</span>, and <span class="highlight">Vishal Sharma</span>,are the creators and developers of this website. We are passionate about building modern, user-friendly web applications that solve real-world problems.
+        </p>
+        <p>
+          Our journey in web development began with curiosity and a love for learning. Over time, we have explored technologies such as
+          <span class="highlight">Django, Python, JavaScript</span>, and more. Our mission is to create platforms that inspire and empower others.
+        </p>
+        <p>Beyond coding, we enjoy exploring new tools, helping others learn programming, and working on creative side projects.</p>
+        <p>
+          Thank you for visiting our site — we truly appreciate your support!<br />
+          WE ARE SEARCHING FOR INTERNSHIP OFFER's.
+        </p>
+      </div>
     </div>
-
     {% include 'footer.html' %}
-</body>
+  </body>
 </html>

@@ -47,7 +47,7 @@
         <div class="message">{{ message }}</div>
         <div class="redirect">
           <p>
-            Already have an account ? <a href="http://127.0.0.1:8000/login/">Login</a>
+            Already have an account ? <a href="{% url 'login' %}">Login</a>
           </p>
         </div>
       </form>
@@ -55,5 +55,4 @@
   </div>
   {% include 'footer.html' %}
 </body>
-
 </html>

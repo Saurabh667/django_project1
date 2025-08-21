@@ -19,9 +19,9 @@
           <a href="#">ALFAAZ ARENA</a>
         </div>
         <div class="content">
-          <div><a href="http://127.0.0.1:8000/admin/">About</a></div>
+          <div><a href="{% url 'about' %}">About</a></div>
          <div> <a href="#explore" class="explorekabtn">Explore</a></div>
-          <div><a href="#">Destinations</a></div>
+          <div><a href="{% url 'uploads' %}">Destinations</a></div>
          <div> <a href="#footer" class="contactkabtn">Contact</a></div>
         </div>
 
@@ -31,7 +31,7 @@
             <input class="submit" type="submit" value="Search" />
           </form>
 
-          <a href="http://127.0.0.1:8000/login/" class="loginkabtn">Login/Signup</a>
+          <a href="{% url 'login' %}" class="loginkabtn">Login/Signup</a>
         </div>
       </nav>
       <div class="full_content">
