@@ -16,7 +16,7 @@
        <nav>
         <div class="logo_name">
           <img src="{% static '/media/logo.png'  %}" alt="" />
-          <a href="#">ALFAAZ ARENA</a>
+          <a href="#">JHANSI ARENA</a>
         </div>
         <div class="content">
           <div><a href="{% url 'about' %}">About</a></div>
@@ -45,7 +45,7 @@
             </div>
             <div class="explore_about">City Of Brave Queen</div>
             <div class="explore_btn">
-              <button class="mic">Chatbot---</button>
+              <button class="mic">Explore---</button>
             </div>
           </div>
         </div>
@@ -67,6 +67,9 @@
       </div>
     </div>
     <div class="next" id="explore">
+      <div class="promo">
+        <img src="/media/sideimg.jpeg" alt="">
+      </div>
       <div class="all_card">
         {% for destinationData in destination %}
           <div class="card">
@@ -99,6 +102,8 @@
           </div>
         {% endfor %}
       </div>
+      
+      
     </div>
     {% include 'footer.html' %}
   </body>
