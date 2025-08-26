@@ -81,10 +81,23 @@ def about(request):
 def botpage(request):
     return render(request,'botpage.html')
 def uploads(request):
+    userphotos=userUploads.objects.all()
     if request.method=='POST':
         destinationName=request.POST.get('destinationName')
-        destinationImg=request.POST.get('destinationImg')
+        destinationImg=request.FILES.get('destinationImg')
         destinationDesc=request.POST.get('destinationDesc')
-        userUploadData=userUploads(destinationName=destinationName,destinationImg=destinationImg,destinationDesc=destinationDesc)
-        userUploadData.save()
-    return render(request,'uploads.html')
+        
+        # userUploadData=userUploads(destinationName=destinationName,destinationImg=destinationImg,destinationDesc=destinationDesc)
+        # userUploadData.save()
+        if destinationImg:  # check if file is uploaded
+            userUploadData = userUploads(
+                destinationName=destinationName,
+                destinationImg=destinationImg,
+                destinationDesc=destinationDesc
+            )
+            userUploadData.save()
+
+    userphotos={
+        'userphotos':userphotos,
+    }
+    return render(request,'uploads.html',userphotos)

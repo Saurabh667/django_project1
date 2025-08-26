@@ -7,8 +7,14 @@ const contact=document.querySelector('.contactkabtn');
 const login=document.querySelector('.loginkabtn');
 const listName=[];
 const listDesc=[];
-bolo('Welcome to the Jhansi Tourism where you get informations about the tourist places in Jhansi')
-bolo('Please login to stay connected')
+if (!sessionStorage.getItem("alreadyRun")) {
+  // Your code here
+  bolo('Welcome to the Jhansi Tourism where you get informations about the tourist places in Jhansi')
+  bolo('Please login to stay connected')
+
+  sessionStorage.setItem("alreadyRun", "true");
+}
+
 placeName.forEach(el => {
     // console.log(el.innerHTML);
     listName.push(el.innerHTML.trim())

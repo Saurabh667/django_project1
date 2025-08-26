@@ -71,7 +71,8 @@
         {% for destinationData in destination %}
           <div class="card">
             <div class="image">
-              <img src="{% static '{{ destinationData.placeImg.url }}' %}" alt="" />
+              {% comment %} <img src="{% static '{{ destinationData.placeImg.url }}' %}" alt="" /> {% endcomment %}
+              <img src="{{ destinationData.placeImg.url }}" alt="">
             </div>
             <div class="desc">
               <h1 class="forJs">{{ destinationData.placeName }}</h1>

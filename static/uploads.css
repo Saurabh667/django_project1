@@ -43,7 +43,16 @@
 .images{
     height: 70vh;
     width: 70vw;
-    background-color: black;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    /* background-color: black; */
+}
+.images img{
+    height: 69vh;
+    width: 65vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .uploads{
     width: 100vw;
