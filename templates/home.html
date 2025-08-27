@@ -19,9 +19,9 @@
           <a href="#">JHANSI ARENA</a>
         </div>
         <div class="content">
-          <div><a href="{% url 'about' %}">About</a></div>
+          <div><a href="{% url 'about' %}" class="aboutkabtn">About</a></div>
          <div> <a href="#explore" class="explorekabtn">Explore</a></div>
-          <div><a href="{% url 'uploads' %}">Destinations</a></div>
+          <div><a href="{% url 'uploads' %}" class="destinationkabtn">Destinations</a></div>
          <div> <a href="#footer" class="contactkabtn">Contact</a></div>
         </div>
 
@@ -106,5 +106,6 @@
       
     </div>
     {% include 'footer.html' %}
+    <script src="/static/nav.js"></script>
   </body>
 </html>

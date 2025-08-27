@@ -35,24 +35,6 @@
       <div class="uploads">
         <div class="card">
           <span class="title">Post Your Experience</span>
-          {% comment %} <form class="form" method="post">
-            {% csrf_token %}
-            <div class="group">
-              <!-- <label for="name">Desitnation Name</label> -->
-              <input placeholder="Destination Name" type="text" required="" name="destinationName" />
-            </div>
-
-            <label for="file-input" class="drop-container">
-              <span class="drop-title">Drop files here</span>
-              or<input type="file" accept="image/*" required="" id="file-input" name="destinationImg" />
-            </label>
-            <div class="group">
-              <!-- <label for="comment" class="comment">Feedback</label> -->
-              <!-- <input type="text" placeholder="Feedback" name="destinationDesc" class="feedbackinput"> -->
-              <textarea placeholder="Feedback" id="comment" name="destinationDesc" rows="5" required="" class="feedback"></textarea>
-            </div>
-            <button type="submit">Post</button>
-          </form> {% endcomment %}
           <form class="form" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="group">
