@@ -18,7 +18,7 @@ a{
 .alfaz{
     font-size: 26px;
     font-weight: bolder;
-    
+    margin-top: 7pro    sc  scpx;
 }
 .alfaz a{
     color: rgb(64, 76, 184);
@@ -42,4 +42,9 @@ a{
 .content{
     display: flex;
     gap: 26px;
+}
+.userlogo img{
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
 }
