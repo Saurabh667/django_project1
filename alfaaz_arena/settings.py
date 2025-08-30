@@ -17,11 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-%q@@468c*+ru-bud5#^4z)n)0y!81-dal0nqh*2k@%z$rz9**c'
 
-DEBUG = True  # ⚠️ Remember to set to False on Render
+DEBUG = True  
 
 ALLOWED_HOSTS = ["jhansi-tourism.onrender.com", "localhost", "127.0.0.1"]
 
-# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -29,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "corsheaders",
 
     # Third-party apps
     'tinymce',
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = 'alfaaz_arena.urls'
@@ -122,6 +123,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'alfaazarena@gmail.com')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'tkikppyscxvcfibv')
+
+CORS_ALLOWED_ORIGINS = [
+    "https://jhansi-tourism.onrender.com",  # yahan apna domain daalo
+]
 
 
 # DEBUG = False
