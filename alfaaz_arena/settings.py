@@ -29,20 +29,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "corsheaders",
-
-    # Third-party apps
     'tinymce',
-
-    # Local apps
     'placeData',
     'signup',
     'uploadedDatas',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # keep whitenoise high
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -70,9 +68,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'alfaaz_arena.wsgi.application'
-
-# Database (SQLite locally, PostgreSQL on Render)
-if os.getenv("DATABASE_URL"):  # production
+if os.getenv("DATABASE_URL"):
     DATABASES = {
         'default': dj_database_url.config(
             default=os.getenv("DATABASE_URL"),
@@ -88,7 +84,6 @@ else:  # local
         }
     }
 
-# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -126,9 +121,11 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'alfaazarena@gmail.com')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'tkikppyscxvcfibv')
 
 CORS_ALLOWED_ORIGINS = [
-    "https://jhansi-tourism.onrender.com",  # yahan apna domain daalo
+    "https://jhansi-tourism.onrender.com",  
 ]
+# CLOUDINARY_URL=cloudinary://137458935994161:gnw6cTNQ2W-BXWj_ulrb6bNFyAg@dgifhqint
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # DEBUG = False
 # SECRET_KEY = os.environ.get('!3oibn7ok82_z%$2-sxi@v3b(fe7*)_$o=ig$550ynim^4r5$h', "django-insecure-fallback")

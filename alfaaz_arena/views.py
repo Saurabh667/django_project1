@@ -5,6 +5,8 @@ from signup.models import signUp
 import datetime
 from django.core.mail import send_mail,EmailMultiAlternatives
 from uploadedDatas.models import userUploads
+# from django.contrib.auth.decorators import login_required
+
 
 def home(request):
     destination=destinationData.objects.all()
@@ -80,6 +82,7 @@ def about(request):
     return render(request,'about.html')
 def botpage(request):
     return render(request,'botpage.html')
+# @login_required
 def uploads(request):
     userphotos=userUploads.objects.all()
     if request.method=='POST':
