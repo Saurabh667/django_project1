@@ -52,7 +52,10 @@ def signup(request):
             to=email
             msg=EmailMultiAlternatives(subject,msg,from_email,[to])
             msg.content_subtype='html'
-            msg.send()
+            try:
+                msg.send()
+            except Exception as e:
+                print("EMAIL FAILED:", e)
             signUp_Data=signUp(first_name=first_name,last_name=last_name,username=username,email=email,password=password)
             signUp_Data.save()
             message='sign up succesfully'
